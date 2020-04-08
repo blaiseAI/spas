@@ -1,18 +1,17 @@
 <template>
   <div id="app" class="bg-gray-200 w-full h-screen">
-   <Home/>
+    <Navigation/>
+    <router-view class="container mx-auto"/>
   </div>
 </template>
-
 <script>
-import Home from './components/Home.vue'
+
+import Navigation from './components/Navigation.vue'
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    Home
+    Navigation
   }
 }
 </script>
-
-<style>
